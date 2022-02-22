@@ -1,6 +1,4 @@
-//const net = require("net");
-//const { connect } = require("./client");
-//connect;
+
 // setup interface to handle user input from stdin
 let connection; //Stores the active TCP connection object.
 const setupInput = function(conn) {
@@ -33,6 +31,18 @@ const handleUserInput = function(key) {
   if(key ==='d'){
     connection.write("Move: right");
     console.log("d pressed");
+  }
+  if(key==='i'){
+    connection.write("Say: Hello");
+  }
+  if(key==='k'){
+    connection.write("Say: KK");
+  }
+  if(key==='j'){
+    connection.write("Say: yeppi");
+  }
+  if(key==='l'){
+    connection.write("Say: GoGo");
   }
 };
 
