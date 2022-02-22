@@ -12,10 +12,6 @@ const connect = function() {
     console.log("Successfully connected to game server");
     conn.write("Name: RST");
 
-  // conn.on('connect', ()=>{
-  //   // setTimeout(() => {
-  //   //   console.log( "Successfully moved up" );
-  //   // }, 1000);
   });
   //  conn.on('connect', ()=>{
   //   setInterval(() => {
@@ -65,10 +61,7 @@ const connect = function() {
   return conn;
 };
 
-console.log("Connecting ...");
-connect();
 
 module.exports = {
-  //myExport: "This is my export",
-  connect
+   connect
 };
