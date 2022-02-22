@@ -1,6 +1,6 @@
 const net = require("net");
 //establishes a connection with the game server
-const connect = function(){
+const connect = function() {
   const conn = net.createConnection({
     host:"192.168.0.22",
     port: 50541
@@ -9,14 +9,14 @@ const connect = function(){
     console.log("Server says: ", data);
   });
   conn.on('connect', ()=>{
-    console.log( "Successfully connected to game server" );
+    console.log("Successfully connected to game server");
     conn.write("Name: RST");
 
   // conn.on('connect', ()=>{
   //   // setTimeout(() => {
   //   //   console.log( "Successfully moved up" );
   //   // }, 1000);
-    });
+  });
   //  conn.on('connect', ()=>{
   //   setInterval(() => {
   //     conn.write( "Move: up" );
@@ -68,7 +68,7 @@ const connect = function(){
 console.log("Connecting ...");
 connect();
 
-module.exports={
-  myExport: "This is my export",
+module.exports = {
+  //myExport: "This is my export",
   connect
-}
+};
