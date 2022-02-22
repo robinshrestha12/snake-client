@@ -13,50 +13,7 @@ const connect = function() {
     conn.write("Name: RST");
 
   });
-  //  conn.on('connect', ()=>{
-  //   setInterval(() => {
-  //     conn.write( "Move: up" );
-  //     console.log( "Successfully moved up" );
-  //    conn.write( "Move: left" );
-  //     console.log( "Successfully moved left" );
-  //     conn.write( "Move: down" );
-  //     console.log( "Successfully moved down" );
-  //    conn.write( "Move: right" );
-  //     console.log( "Successfully moved right" );
-  //   }, 2000);
-  //  });
-
-  //  conn.on('connect', ()=>{
-  //    setTimeout(() => {
-  //     conn.on('connect', ()=>{
-  //       setInterval(() => {
-  //         conn.write( "Move: left" );
-  //         console.log( "Successfully moved left" );
-  //       }, 2000);
-  //      });
-  //    }, 1000);
-  //   setInterval(() => {
-  //     conn.write( "Move: left" );
-  //     console.log( "Successfully moved left" );
-  //   }, 2000);
-  // });
-
     
-  //     conn.write("Move: up");
-  //  });
-  // conn.on('connect', ()=>{
-  //   console.log( "Successfully moved down" );
-  //   conn.write("Move: down");
-  // });
-  // conn.on('connect', ()=>{
-  //   console.log( "Successfully Moved left" );
-  //   conn.write("Move: left");
-  //   });
-  // conn.on('connect', ()=>{
-  //   console.log( "Successfully moved right." );
-  //   conn.write("Move: right");
-  // });
-  //interpret incoming data as text
   conn.setEncoding("utf-8");
   return conn;
 };
